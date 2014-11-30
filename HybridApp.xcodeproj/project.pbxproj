@@ -14,6 +14,9 @@
 		3D33D96D1A2B665A001617B2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D33D96C1A2B665A001617B2 /* Images.xcassets */; };
 		3D33D9701A2B665B001617B2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D33D96E1A2B665A001617B2 /* LaunchScreen.xib */; };
 		3D33D97C1A2B665B001617B2 /* HybridAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D33D97B1A2B665B001617B2 /* HybridAppTests.swift */; };
+		3D33D98B1A2B66EF001617B2 /* NativeBridge.js in Resources */ = {isa = PBXBuildFile; fileRef = 3D33D9891A2B66EF001617B2 /* NativeBridge.js */; };
+		3D33D98C1A2B66EF001617B2 /* NativeCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D33D98A1A2B66EF001617B2 /* NativeCall.swift */; };
+		3D33D9901A2B6927001617B2 /* html in Resources */ = {isa = PBXBuildFile; fileRef = 3D33D98F1A2B6927001617B2 /* html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		3D33D9751A2B665B001617B2 /* HybridAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HybridAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D33D97A1A2B665B001617B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D33D97B1A2B665B001617B2 /* HybridAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HybridAppTests.swift; sourceTree = "<group>"; };
+		3D33D9891A2B66EF001617B2 /* NativeBridge.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = NativeBridge.js; sourceTree = "<group>"; };
+		3D33D98A1A2B66EF001617B2 /* NativeCall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeCall.swift; sourceTree = "<group>"; };
+		3D33D98F1A2B6927001617B2 /* html */ = {isa = PBXFileReference; lastKnownFileType = folder; path = html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,9 @@
 		3D33D95F1A2B665A001617B2 /* HybridApp */ = {
 			isa = PBXGroup;
 			children = (
+				3D33D98F1A2B6927001617B2 /* html */,
+				3D33D9891A2B66EF001617B2 /* NativeBridge.js */,
+				3D33D98A1A2B66EF001617B2 /* NativeCall.swift */,
 				3D33D9621A2B665A001617B2 /* AppDelegate.swift */,
 				3D33D9671A2B665A001617B2 /* ViewController.swift */,
 				3D33D9691A2B665A001617B2 /* Main.storyboard */,
@@ -196,8 +205,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D33D96B1A2B665A001617B2 /* Main.storyboard in Resources */,
+				3D33D98B1A2B66EF001617B2 /* NativeBridge.js in Resources */,
 				3D33D9701A2B665B001617B2 /* LaunchScreen.xib in Resources */,
 				3D33D96D1A2B665A001617B2 /* Images.xcassets in Resources */,
+				3D33D9901A2B6927001617B2 /* html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +228,7 @@
 			files = (
 				3D33D9681A2B665A001617B2 /* ViewController.swift in Sources */,
 				3D33D9631A2B665A001617B2 /* AppDelegate.swift in Sources */,
+				3D33D98C1A2B66EF001617B2 /* NativeCall.swift in Sources */,
 				3D33D9661A2B665A001617B2 /* HybridApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
