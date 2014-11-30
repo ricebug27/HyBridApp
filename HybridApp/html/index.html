@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script>
+            function notify(){
+                NativeBridge.call('notify','this is a Test');
+            }
+        
+        function getData(){
+            NativeBridge.call('getData','call from js',function(result){
+                var re = result[0];
+                alert(re);
+                var parsedObj = JSON.parse(re);
+                alert(parsedObj.person.name);
+            });
+        }
+        </script>
+    </head>
+    <body>
+        <br/>
+        <br/>
+        <br/>
+        <p>WebApp JavaScript与IOS本地调用示例<p><br/>
+        <br/>
+        <input type = "button" value="通知1" onclick="notify();" />
+        <input type = "button" value="返回值" onclick="getData();" />
+    </body>
+</html>

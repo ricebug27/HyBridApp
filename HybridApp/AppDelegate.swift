@@ -17,6 +17,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        //设置Notification 的类型
+        let types:UIUserNotificationType = UIUserNotificationType.Alert | UIUserNotificationType.Badge
+        //设置Notification的设置项，其中categories参数用来设置Notification的类别
+        let mySettings: UIUserNotificationSettings = UIUserNotificationSettings(forTypes: types, categories: nil);
+        //注册UserNotification
+        UIApplication.sharedApplication().registerUserNotificationSettings(mySettings)
         return true
     }
 
